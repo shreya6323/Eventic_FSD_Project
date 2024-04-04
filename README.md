@@ -33,5 +33,5 @@ For detailed insights into Eventic's development and features, please refer to o
 
 Eventic was developed collaboratively by :
 
-- Shreya Gandhi - [GitHub](https://github.com/johndoe)
-- Dipali Detroja - [GitHub](https://github.com/janesmith)
+- Shreya Gandhi - [GitHub](https://github.com/shreya6323)
+- Dipali Detroja - [GitHub](https://github.com/madp1234)
