@@ -1,0 +1,55 @@
+/* AttendanceTable.css */
+
+.attendance-table-container {
+    width: 100%;
+    height: auto;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Add this line to align items vertically */
+  }
+  
+  .attendance-card {
+    background-color: transparent;
+    border-radius: 10px;
+    border:2px solid  #adb0ea;
+    padding : 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally within the card */
+  }
+  
+  .attendance-title {
+    margin: 20px 0;
+    font-size: 30px;
+  }
+  
+  .attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid  #adb0ea;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .attendance-table th,
+  .attendance-table td {
+    border: 1px solid  #fff;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .attendance-table th {
+    background-color: transparent;
+    font-weight: bold;
+  }
+  
+  .attendance-table tbody tr:nth-child(even) {
+    background-color: transparent;
+  }
+  
+  .attendance-table tbody tr:hover {
+    border: 4px solid  #adb0ea;
+  }

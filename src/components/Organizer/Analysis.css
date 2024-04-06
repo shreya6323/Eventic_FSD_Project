@@ -1,0 +1,146 @@
+/* Set a linear gradient background */
+.dashboard-container {
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly between sections */
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* background: linear-gradient(to bottom, #0074cc, #000000); */
+    background:transparent;
+  }
+  
+  /* Left Section Styles */
+  .left-section {
+    display: flex;
+    width:700px;
+    flex-direction: column;
+    margin-right: 50px;
+    padding-left: 220px;
+  }
+  
+  .rectangle-container {
+    display: flex;
+    gap: 0px; /* Decrease gap between rectangles */
+  }
+  
+  .info-feed {
+    display: flex;
+    justify-content: space-between; /* Align items with space between */
+    align-items: center;
+  }
+  
+
+
+  .rectangle {
+   width:1200px;
+    height: 100px;
+    padding:20px;
+    /* background-color:transparent ;  */
+    /* background: linear-gradient(to right, #74ebd5, #9face6); */
+    /* background: linear-gradient(to right, #000000, #1d4872, #8e44ad); */
+    background-color: #6247aa;
+    background-image: linear-gradient(316deg, #6247aa 0%, #a594f9 74%);
+    /* background: linear-gradient(to bottom right, rgb(148, 0, 211), rgb(0, 0, 255)); */
+  /* Semi-transparent white background */
+    border-radius: 15px; /* Increased border radius */
+    box-shadow: 0 4px 8px white; 
+    /* Darker box shadow on the left side */
+    display: flex;
+    margin-right:50px;
+    margin-bottom:30px;
+    margin-top:-20px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; /* Add transition effect */
+  }
+
+  
+  .circle {
+    width: 250px;
+    height: 250px;
+    margin-left:90px;
+   /* Adjusted margin-top for circle */
+   
+  }
+  
+  /* Right Section Styles */
+  .right-section {
+    display: flex;  
+  
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto; /* Make the right section scrollable */
+    max-height: calc(100vh - 20px); /* Set maximum height for the right section */
+    padding-right: 20px; /* Add space between scrollbar and boxes */
+  }
+  .emoji{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+  }
+  .feedback-title{
+    justify-content: left;
+    align-items: left;
+    display: flex;
+    color: #adb0ea;
+    font-size: 44px;
+  }
+
+
+  .feedback-box {
+    width: 300px;
+    padding: 20px;
+   border:2px solid  #adb0ea;
+    margin-bottom: 40px;
+    background-color: transparent; /* Semi-transparent white background */
+    border-radius: 15px; /* Increased border radius */
+  /* Regular box shadow for feedback boxes   box-shadow: 0 8px 12px  #adb0ea; */
+    transition: transform 0.3s ease; /* Add transition effect */
+  }
+  
+  /* Add hover effect */
+  .rectangle:hover,
+  .circle:hover,
+  .feedback-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Increase icon size */
+  .icon {
+    font-size: 40px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+  }
+  .content{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Increase font size */
+  .label,
+  .value,
+  
+  .feedback-text {
+    font-size: 20px;
+  }
+  
+
+  
+  
+  /* Ensure scrollbar is always visible */
+  .right-section::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  .right-section::-webkit-scrollbar-thumb {
+    background-color:  #adb0ea; /* Purple color for scrollbar thumb */
+    border-radius: 5px; /* Rounded corners for scrollbar thumb */
+  }
+  
+  .right-section::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for scrollbar track */
+  }

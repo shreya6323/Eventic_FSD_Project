@@ -1,0 +1,70 @@
+/* Your CSS file */
+/*body{
+ background-color: #2234ae;
+  background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
+  
+}*/
+/* Style for the container */
+.box {
+  width: 35vw; /* 50% of the parent element */
+  height: 35vw; /* 50% of the viewport width */
+  margin: 5%; /* 5% margin around the container */
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 10px 20px  #3c82ff; /*changed*/
+  margin-right: 3vw;
+
+/* Adding a more pronounced shadow */
+  overflow: hidden; /* Ensure the content doesn't overflow */
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+  border-radius: 50%; /* Initial shape as a circle */
+}
+.blob-container{
+  width: 35vw; /* 50% of the parent element */
+  height: 35vw ;/* 50% of the viewport width */
+  margin: 5%; /* 5% margin around the container */
+  margin-top: 10px;
+  -webkit-background-size: cover;
+  overflow: hidden;
+  margin-right: 3vw;
+  position: relative;
+  border-radius: 50%; /* Initial shape as a circle */
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 20px  #adb0ea; /*changed*/
+
+/* Adding a more pronounced shadow */
+  overflow: hidden; /* Ensure the content doesn't overflow */
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+  border-radius: 50%; /* Initial shape as a circle */
+}
+
+/* Style for the video inside the blob */
+.video-in-blob {
+  width: 100%; /* Fill the container width */
+  height: 100%; /* Fill the container height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  position: absolute; /* Position the video within the box */
+  top: 50%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%); /* Center the video */
+}
+
+/* Keyframes for animating the blob */
+@keyframes animate {
+  0% {
+    /* Initial shape */
+    border-radius: 50%;
+  }
+  50% {
+    /* Adjust the shape */
+    border-radius: 30% 70% 70% 30% / 70% 40% 60% 30%; /* More curvature */
+  }
+  100% {
+    /* Return to initial shape */
+    border-radius: 50%;
+  }
+}

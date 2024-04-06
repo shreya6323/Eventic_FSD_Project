@@ -1,0 +1,41 @@
+/* Add this CSS to your component's CSS file (e.g., UpdateEventForm.css) */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Makes the form container take up the full height of the viewport */
+  }
+  
+  .form {
+    width: 80%; /* Adjust width as needed */
+    max-width: 400px; /* Set a maximum width for the form */
+    padding: 20px;
+    background-color: #f0f0f0; /* Background color of the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+  }
+  
+  input,
+  textarea,
+  button {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Border color for input fields */
+    border-radius: 4px; /* Rounded corners for input fields */
+  }
+  
+  button {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+  }
+  
+  /* Add any other styles you need for your form elements */
+  

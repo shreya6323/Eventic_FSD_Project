@@ -1,0 +1,400 @@
+
+.swiper_container {
+  width: 100%; /* Set the width of the container */
+  display: flex;
+  /*background-color: #0c1222;*/
+  justify-content: center; /* Center the content horizontally */
+  align-items: center;
+    height: auto;
+    padding: 2rem 1rem;
+    position: relative;
+    margin-top: -5px;
+  }
+  /* SwiperClass.css */
+
+  .heading {  /*this need to be fixed make it reusable */
+    font-size: 4vw;
+    color:white;
+    /* background-color: #0c1222; */
+    text-align: center;
+  padding-top: 50px;
+    /* Align the text center */
+    /* Add any other styles you want for the heading */
+  }
+
+  .swiper-slide {
+ 
+
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    width: 35rem;
+    height: 35rem;
+    position: relative;
+  }
+  
+  @media (max-width: 500px) {
+    .swiper_container {
+      height: 47rem;
+    }
+    .swiper-slide {
+      width: 28rem !important;
+      height: 36rem !important;
+    }
+    .swiper-slide img {
+      width: 20rem !important;
+      height: 30rem !important;
+      margin-left: 16px;
+          
+    }
+  }
+  
+  .swiper-slide img {
+    width: 20rem;
+    height: 30rem;
+    
+    border-radius: 2rem;
+    object-fit: cover;
+  }
+  
+  .swiper-slide-shadow-left,
+  .swiper-slide-shadow-right {
+    display: none;
+  }
+  
+  .slider-controler {
+    position: relative;
+    bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slider-controler .swiper-button-next {
+    left: 58% !important;
+    transform: translateX(-58%) !important;
+  }
+  
+  @media (max-width: 990px) {
+    .slider-controler .swiper-button-next {
+      left: 70% !important;
+      transform: translateX(-70%) !important;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .slider-controler .swiper-button-next {
+      left: 80% !important;
+      transform: translateX(-80%) !important;
+    }
+  }
+  
+  @media (max-width: 990px) {
+    .slider-controler .swiper-button-prev {
+      left: 30% !important;
+      transform: translateX(-30%) !important;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .slider-controler .swiper-button-prev {
+      left: 20% !important;
+      transform: translateX(-20%) !important;
+    }
+  }
+  @media (max-width: 500px) and (orientation: portrait) {
+    .swiper_container {
+      height: auto; /* Allow the container to adjust its height based on content */
+    }
+  
+    .swiper-slide {
+      width: 100% !important; /* Use full width for small screens */
+      height: auto !important; /* Allow the height to adjust based on content */
+    }
+  
+    .swiper-slide img {
+      width: 100% !important; /* Use full width for small screens */
+      height: auto !important; /* Allow the height to adjust based on content */
+      margin-left: 0; /* Remove margin */
+    }
+  }
+  
+  
+  .slider-controler .slider-arrow {
+    background: var(--white);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    left: 42%;
+    transform: translateX(-42%);
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  }
+  
+  .slider-controler .slider-arrow ion-icon {
+    font-size: 2rem;
+    color: #222224;
+  }
+  
+  .slider-controler .slider-arrow::after {
+    content: '';
+  }
+  
+  .swiper-pagination {
+    position: relative;
+    width: 15rem !important;
+    bottom: 1rem;
+  }
+  
+  .swiper-pagination .swiper-pagination-bullet {
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  }
+  
+  .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--primary);
+  }
+
+  
+.slider-arrow {
+  width: 40px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  background-color: #3c82ff; /* Arrow background color */
+  color: white; /* Arrow color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px; /* Arrow font size */
+  border-radius: 50%; /* Rounded shape */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth color transition on hover */
+
+  /* Add hover effect */
+  &:hover {
+    background-color: #2652ab; /* Adjust hover color as needed */
+  }
+}
+
+/* SwiperClass.css */
+
+
+/* Search Container */
+.search-container {
+  margin-top: 35px;
+  width: auto; /* Set width to auto to fit content */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: relative;
+ 
+}
+
+.search-input {
+  width: 600px; /* Set a fixed width for the input */
+  padding: 0.5rem ;
+  padding-left: 50px;
+  font-size: 1rem;
+  height:50px;
+  border: 2px solid #adb0ea;
+  border-radius: 55px;
+  background:transparent;
+  outline: none;
+  transition: border-color 0.3s ease;
+  color: #fff;
+}
+
+/* Search Icon */
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 300px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  /* margin-right: 300px; */
+  font-size: 20px;
+  color: #adb0ea;
+  
+}
+
+
+
+.search-input:focus {
+  border-color: #3c82ff; /* Change border color when input is focused */
+}
+
+.search-button {
+  background-color: #3c82ff;
+  color: white;
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth color transition on hover */
+
+  /* Add hover effect */
+  &:hover {
+    background-color: #2652ab; /* Adjust hover color as needed */
+  }
+}
+
+.search-container {
+  position: relative;
+}
+
+
+
+
+.search-icon svg {
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+.search-icon svg:hover {
+  color: #3c82ff;
+}
+
+
+
+
+
+/* General styles */
+.swiper_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 2rem 1rem;
+  position: relative;
+  margin-top: -5px;
+}
+
+.heading {
+  font-size: 4vw;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35rem;
+  height: 35rem;
+  position: relative;
+}
+
+.swiper-slide img {
+  width: 20rem;
+  height: 30rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.slider-controler {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-controler .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+
+/* Responsive styles */
+@media (max-width: 990px) {
+  .slider-controler .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+  }
+  .slider-controler .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .slider-controler .swiper-button-next {
+    left: 80% !important;
+    transform: translateX(-80%) !important;
+  }
+  .slider-controler .swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
+}
+
+@media (max-width: 500px) and (orientation: portrait) {
+  .swiper_container {
+    height: auto;
+  }
+  .swiper-slide {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .swiper-slide img {
+    width: 100% !important;
+    height: auto !important;
+    margin-left: 0;
+  }
+}
+
+/* Search Container */
+.search-container {
+  margin-top: 35px;
+  width: auto;
+  margin-left:20px;
+  margin-right:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.search-input {
+  width: 600px;
+  padding: 0.5rem;
+  padding-left: 50px;
+  font-size: 1rem;
+  height: 50px;
+  border: 2px solid #adb0ea;
+  border-radius: 55px;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s ease;
+  color: #fff;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 300px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  color: #adb0ea;
+}
+
+.search-input:focus {
+  border-color: #3c82ff;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-icon svg {
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+.search-icon svg:hover {
+  color: #3c82ff;
+}

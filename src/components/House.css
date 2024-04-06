@@ -1,0 +1,18 @@
+/* YourComponent.css */
+
+
+/* Styles for larger screens - components arranged horizontally */
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    /* Change to vertical layout for small screens */
+    .container {
+      flex-direction: column;
+      align-items: center; /* Optional: Center align components */
+    }
+  }
+  

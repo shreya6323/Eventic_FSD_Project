@@ -1,0 +1,50 @@
+.scanner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .QrReader {
+    width: 100%;
+    height: 100%;
+  
+  }
+ 
+   .scanner-wrapper {
+    margin-left:100px;
+    position: relative;
+    width: 400px; /* Adjust the width as needed */
+    height: 550px; /* Adjust the height as needed */
+    /* border: 2px solid black; Border color and width */
+    /* border-radius: 10%; Make the border oval-shaped */
+    overflow: hidden; 
+    
+  } 
+
+.inst{
+    font-size: 20px;
+    margin:10px;
+    color: #555;
+   
+}
+
+
+  .qrreader{
+ 
+    border: 2px solid black; 
+ 
+    width:350px;
+    height:350px;
+  }
+ 
+  
+ 
+  
+
+ 
+  
+ 
+  
+  /* You can add additional styling as needed */
+  

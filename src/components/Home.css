@@ -1,0 +1,36 @@
+/* Home.css */
+
+.home-container {
+    display: flex;
+    justify-content: space-between; /* Align components at the start and end of the container */
+    align-items: center; /* Center vertically */
+    gap: 20px; /* Add gap between the components */
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  /* Styles for the Video component */
+  .video {
+    flex: 1; /* Take up all available space */
+    /* Additional styles for Video */
+  }
+  
+  /* Styles for the Typewriter component */
+  .typewriter {
+    flex: 1; /* Take up all available space */
+    text-align: center; /* Center-align the text */
+    /* Additional styles for Typewriter */
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .home-container {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      height: auto; /* Adjust height as needed */
+      gap: 10px; /* Add gap between the components for smaller screens */
+    }
+  
+    .typewriter {
+      text-align: left; /* Align Typewriter component to the left on smaller screens */
+    }
+  }
+  

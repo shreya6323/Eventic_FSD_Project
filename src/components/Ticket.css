@@ -1,0 +1,175 @@
+ 
+ @font-face {
+    font-family: 'Porcelain';
+    src: url('../../public/fonts/Porcelain.otf') format('opentype');
+    /* Additional font properties */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo-container{
+    display:flex;
+    flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+  margin-bottom: -20px;
+  }
+
+  /* body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  } */
+  
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+  
+  @media screen and (min-width: 768px) {
+    /* Adjustments for larger screens */
+    #container {
+      padding: 50px; /* Increased padding for larger screens */
+    }
+ 
+  }
+  
+
+.ticket{
+    background-image: url('../assets/blue.jpg');
+   
+    background-size: cover; /* Ensure background image covers the entire container */
+    background-position: center;
+  /* Border style */
+    border-radius: 10px;
+    /* box-shadow:  0 0 15px #adb0ea; */
+    animation: floatAnimation  3s  infinite alternate;
+    /* box-shadow: 0px 7px 20px  #adb0ea; */
+    padding: 30px;
+    max-width: 230px;
+  height: 440px;
+    margin: 0 auto;
+  
+    font-family: Arial, sans-serif;
+   
+  }
+
+ 
+  .qr-code-container::before {
+    content: '';
+    position: absolute;
+  
+    top: -10px; /* Adjust the distance from the QR code container */
+    left: 50%; /* Position the dashed line in the center */
+    transform: translateX(-50%); /* Center the dashed line horizontally */
+    width: 100%; /* Adjust the width of the dashed line */
+    border-top: 2px dashed white; /* Style the dashed line */
+  }
+ 
+  
+ 
+
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-15px); /* Adjust distance of movement */
+    }
+  }
+
+.eventic-container{
+
+ display:flex;
+ margin-top:-10px;
+
+ /* flex-direction: row; */
+ 
+
+  }
+
+
+  .eventic-logo{
+    color: #adb0ea;
+   
+
+  }
+ 
+.eventic-container{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: -8px;
+  margin-top: -15px;
+}
+
+   .eventic-logo-name{
+    font-family: 'Porcelain';
+    font-size: 35px; /* Default font size */
+    color: white;
+   
+    
+  
+   }
+
+  .ticket-header {
+    text-align: center;
+font-family: cursive;
+font-size:30px;
+
+   
+  }
+  
+  .ticket-details {
+    
+    margin-bottom: 20px;
+  }
+  
+
+  
+
+  .detail-row {
+  
+  
+    margin-bottom: 8px;
+  }
+  
+  /* .qr-code-container {
+  
+    text-align: center;
+  } */
+ 
+
+  
+  .qr-code-container {
+    text-align: center;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .qr-code {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .qr-code img{
+ 
+    border-radius: 10px;
+    width:160px;
+    margin-top: 8px;;
+  
+  }
+     
+  
+  
+ 

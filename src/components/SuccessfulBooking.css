@@ -1,0 +1,25 @@
+
+.container {
+    position: relative;
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+  /* Adjust the height as needed */
+  }
+  .button {  /*need to generalize this style .. for all buttons */
+   margin-top:20px;
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    border: solid 2px white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+
+  
+  

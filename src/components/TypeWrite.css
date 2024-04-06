@@ -1,0 +1,10 @@
+/* Styles for typewriter text */
+.typewriter-text {
+    font-weight: bold;
+    font-size: 5vw; /* Relative to the viewport width */
+    color:antiquewhite;
+   
+    /* Add any other styles you want */
+  }
+  
+  /* Styles for typebox */

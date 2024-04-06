@@ -1,0 +1,117 @@
+.passenger-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+
+     /* Hide the scrollbar */
+  }
+  
+  .passenger-details-card {
+    /* background: rgba(255, 255, 255, 0.8); */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 80%;
+    width: 600px;
+    max-height: 70vh; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 20px;
+    background-color: transparent;
+    border: 2px solid   #adb0ea; /* Add border style here */
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0px 20px  #adb0ea;
+    background: transparent;
+  
+  }
+  
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+  /* .passenger-details-card::-webkit-scrollbar {
+    display: none;
+  } */
+  
+  .heading {  /*this need to be fixed make it reusable */
+    font-size: 4vw;
+    color:white;
+    /* background-color: #0c1222; */
+    text-align: center;
+    margin-left:70px;
+    margin-bottom: 22px;
+  padding-top: 20px;
+    /* Align the text center */
+    /* Add any other styles you want for the heading */
+  }
+  .passenger-details-card h2 {
+    margin-bottom: 20px;
+  }
+  
+  .passenger-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .passenger-inputs input {
+    padding: 10px;
+    width:320px;
+    margin-bottom: 10px;
+   color: lightgray;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color:transparent;
+  }
+  
+
+  
+  @media screen and (max-width: 768px) {
+    .passenger-details-card {
+      width: 90%; /* Adjust width for smaller screens */
+    }
+  }
+
+ .btn-container{
+  /* margin-left:180px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ /* PassengerDetails.css */
+
+.passenger-details-card {
+  /* Add overflow-y to enable vertical scrollbar */
+  overflow-y: auto; /* Use "scroll" if you always want to show the scrollbar */
+
+  /* Add other styles as needed */
+}
+
+/* Custom scrollbar styles */
+.passenger-details-card::-webkit-scrollbar {
+  width: 10px;
+}
+
+.passenger-details-card::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.passenger-details-card::-webkit-scrollbar-thumb {
+  background: #adb0ea;
+  border-radius: 10px;
+}
+
+.passenger-details-card::-webkit-scrollbar-thumb:hover {
+  background: rgb(100, 100, 100);
+}
+
+.passenger-details-card::-webkit-scrollbar-thumb:active {
+  background: rgb(68, 68, 68);
+}

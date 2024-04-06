@@ -1,0 +1,77 @@
+/* EventDetails.css */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the card container full height of the viewport */
+     /* Black to blue gradient background */
+  }
+  
+  .card {
+    /* background: rgba(255, 255, 255, 0.2); Semi-transparent white background for glassy effect */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Reduced padding for smaller devices */
+    width: 90%; /* Set width to 90% of the container */
+    max-width: 1000px; /* Increased max width for larger screens */
+    display: flex; /* Use flexbox for card layout */
+    flex-direction: column; /* Stack card contents vertically */
+    align-items: center; /* Center contents horizontally */
+    backdrop-filter: blur(10px); /* Apply blur for glassy effect */
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+    color :#fff;
+    background-color: transparent;
+     /* Silver shadow */
+    
+  }
+  .card img {
+    animation: bounce 2s infinite alternate; /* Apply bounce animation only on hover */
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px); /* Adjust the distance the card moves */
+    }
+  }
+  
+  
+  /* Additional styles for the image */
+  .card img {
+    max-width: 95%;
+    height: auto;
+    border-radius: 20px ; /* Apply rounded corners only to the top */
+  }
+  
+  /* Additional styles for the event details */
+  .card .event-details {
+    text-align: center;
+  }
+  
+  .card h1 {
+    white-space: nowrap; /* Prevent the event title from wrapping */
+    overflow: hidden; /* Hide any overflow if the title is too long */
+    text-overflow: ellipsis; /* Show ellipsis (...) for truncated text */
+  }
+  
+  /* Additional styles for the button */
+
+
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column; /* Stack card contents vertically on smaller screens */
+      padding: 40px; /* Restore padding for smaller devices */
+    }
+  
+    .card img {
+      border-radius: 20px; /* Apply rounded corners to all sides for smaller devices */
+      margin-bottom: 20px; /* Add some space between image and text on smaller screens */
+    }
+  
+    .card .event-details {
+      text-align: left; /* Align text to the left on smaller screens */
+    }
+  }

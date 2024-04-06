@@ -1,0 +1,125 @@
+
+
+  /* TeamSection.css */
+
+.heading {
+  font-size: 4vw;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  margin-right:40px;
+  /* Add any other styles you want for the heading */
+}
+
+.main {
+  width: 100%;
+
+  height: auto; /* Changed height to auto for responsive design */
+  display: flex;
+  flex-wrap: wrap; /* Wrap items in smaller screens */
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Added padding for spacing */
+}
+
+.profile-card {
+
+  position: relative;
+  font-family: sans-serif;
+  width: 260px;
+  height: 260px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 50%;
+  margin: 20px; /* Added margin for spacing between profile cards */
+  background-color: transparent;
+  border: 2px solid #adb0ea;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0px 20px #adb0ea;
+}
+
+.profile-card:hover {
+  border-radius: 10px;
+  height: 260px;
+}
+
+.profile-card .img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-card:hover .img {
+  transform: translateY(-60px);
+}
+
+.img img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 22px #3336;
+  transition: .6s;
+}
+
+.profile-card:hover img {
+  border-radius: 10px;
+}
+
+.names{
+  font-size: 20px;
+}
+.caption {
+  text-align: center;
+  transform: translateY(-80px);
+  opacity: 0;
+  transition: .6s;
+  margin-top:20px;
+}
+
+.profile-card:hover .caption {
+  opacity: 1;
+}
+
+.caption h3 {
+  font-size: 21px;
+  font-family: sans-serif;
+}
+
+.caption p {
+  font-size: 20px;
+  color: white;
+  font-family: sans-serif;
+  margin: 4px 0 9px 0;
+}
+
+.caption .social-links a {
+  color: #333;
+  margin-right: 15px;
+  font-size: 21px;
+  transition: .6s;
+}
+
+.social-links a:hover {
+  color: #0c52a1;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-card {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+  }
+  
+  .profile-card:hover {
+    height: 220px;
+  }
+  
+  .profile-card:hover .img {
+    transform: translateY(-40px);
+  }
+  
+  .caption {
+    transform: translateY(-60px);
+  }
+}
